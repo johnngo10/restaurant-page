@@ -1,1 +1,1 @@
-A restaurant page built with HTML, CSS and JavaScript
+A restaurant page built with HTML, CSS, JavaScript and webpack

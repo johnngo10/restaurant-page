@@ -2,7 +2,6 @@ const menu = () => {
   const main = document.getElementById('main');
 
   main.innerHTML = `
-<main>
 <div id="menu-container">
 <h1 id="menu-title">Menu</h1>
 <div id="menu-item-container">
@@ -103,8 +102,14 @@ const menu = () => {
   </div>
 </div>
 </div>
-</main>
   `;
+
+  const navItems = document.querySelectorAll('.nav-items');
+  const menuButton = document.getElementById('menu-button');
+  for (let i = 0; i < navItems.length; i++) {
+    navItems[i].style.color = 'white';
+  }
+  menuButton.style.color = '#ffd700';
 };
 
 export default menu;

@@ -5,17 +5,11 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 
-/* body {
-} */
-
 #content {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url('img/mae-mu-I7A_pHLcQK8-unsplash.jpg');
   background-position: 0% 70%;
-  /* border: 1px solid white; */
   height: 100vh;
-  /* background-size: cover; */
-  /* height: 600px; */
 }
 
 /* Header */
@@ -45,6 +39,10 @@ header {
   color: white;
 }
 
+.nav-items:hover {
+  color: #ffd700;
+}
+
 /* Home Page */
 #home-text-container {
   display: flex;
@@ -52,7 +50,6 @@ header {
   justify-content: center;
   align-items: center;
   justify-content: space-between;
-  /* border: 1px solid white; */
   height: 200px;
   margin: 300px auto;
   color: white;
@@ -67,7 +64,7 @@ header {
   font-size: 40px;
 }
 
-#view-menu-botton {
+#view-menu-button {
   padding: 14px;
   background-color: #ffd700;
   border: none;
@@ -82,19 +79,15 @@ header {
 
 /* Menu Page */
 #menu-container {
-  background-color: #181818;
-  height: 760px;
+  background-color: rgb(19, 19, 19);
+  height: 761px;
   padding: 0 70px 60px 70px;
 }
 
 #menu-item-container {
-  /* display: grid; */
-  /* border: 1px solid black; */
   display: flex;
   justify-content: space-between;
   color: white;
-  /* grid-template-columns: repeat(2, 2fr);
-  grid-template-rows: repeat(2, 2fr); */
 }
 
 #menu-title {
@@ -105,7 +98,6 @@ header {
 }
 
 .col {
-  /* border: 1px solid black; */
   margin: 0 20px;
 }
 
@@ -121,7 +113,6 @@ header {
   align-items: center;
   justify-content: space-between;
   padding-bottom: 30px;
-  /* border: 1px solid black; */
 }
 
 .item-text {
@@ -131,4 +122,89 @@ header {
 .item-name {
   font-size: 18px;
   padding-bottom: 2px;
+}
+
+/* Contact Us */
+#contact-container {
+  background-color: rgb(19, 19, 19);
+}
+
+#contact-title {
+  text-align: center;
+  font-size: 40px;
+  padding: 50px;
+  color: #ffd700;
+}
+
+#contact-info-container {
+  display: flex;
+  justify-content: center;
+  color: white;
+  margin: 20px 0;
+}
+
+.info-container {
+  text-align: center;
+  margin: 20px;
+}
+
+.info-container p {
+  font-size: 18px;
+}
+
+.contact-info-title {
+  font-size: 24px;
+  padding-bottom: 10px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  padding: 40px;
+}
+
+#firstName,
+#lastName,
+#email {
+  margin: 15px;
+  padding: 5px;
+  width: 400px;
+  font-size: 16px;
+}
+
+form textarea {
+  font-size: 16px;
+  width: 400px;
+  height: 80px;
+  padding: 5px;
+  margin: 15px;
+}
+
+#submit {
+  padding: 10px 14px;
+  background-color: #ffd700;
+  border: none;
+  cursor: pointer;
+}
+
+#submit:hover {
+  opacity: 0.8;
+}
+
+#submit:focus {
+  outline: none;
+}
+
+footer {
+  background-color: rgb(11, 11, 11);
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  padding: 30px 0;
+  color: #ffd700;
+  text-align: center;
 }
